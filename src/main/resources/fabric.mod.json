@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "just-red-beds",
+	"version": "${version}",
+	"name": "Just Red Beds",
+	"description": "Remove every colour of beds, except red.",
+	"authors": [
+		"herrobriam"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/herrobriam/just-red-beds"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/just-red-beds/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.herrobriam.justredbeds.JustRedBeds"
+		],
+		"fabric-datagen": [
+			"net.herrobriam.justredbeds.JustRedBedsDataGenerator"
+		]
+	},
+	"mixins": [
+		"just-red-beds.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": ">=1.18 <=1.21",
+		"java": ">=17"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
